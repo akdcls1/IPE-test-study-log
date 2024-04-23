@@ -1,0 +1,132 @@
+2022년 1회 실기 11번~20번 기출해설특강(흥달쌤)
+
+11. APT 공격에서 주로 쓰이는 공격, 타겟이 자주들어가는 홈페이지 파악 후 취약점에 악성코드 심어 악성코드를 다운로드하게 한뒤
+이걸로 공격하는 방식
+- Watering Hole
+: 공격방식이 너무많아서 어려운 문제임
+
+
+12. 기본적으로 폭포수모델이고 거기서 강화된게 V모델 테스트단계
+개발 - 단위 : 정적, 동적 수행
+설계 - 통합 : 하향식 스텁
+             상향식 드라이버
+             빅뱅 도구 x
+기능명세 분석 - 시스템 : 기능, 비기능
+요구사항 분석 - 인수 : 알파테스트, 베타테스트
+
+애자일 방법론 - xp(의사소통,피드백,존중,용기,단순성)
+
+
+13. sql 결과에 맞는 쿼리작성
+SELECT NAME, SCORE FROM 성적 (1) BY (2)(3)
+1 ORDER
+2 SCORE
+3 DESC
+
+
+14. 파이썬함수
+1) 요소를 확장해주는 역할, 모든 항목을 하나의 요소로 추가
+2) 리스트 내부 요소를 꺼내주는 함수, 해당 함수를 호출하면 리스트에서 해당 값 삭제하면서 리턴
+3) 리스트 내부 요소 순서를 뒤집어주는 역할
+
+1: extend
+2: pop
+3: reverse
+
+
+15. def func1(num1, num2=2):
+       print('a=', num1, 'b=', num2)
+    func1(20)
+a=20b=2
+
+
+16. java코드 중 밑줄
+class Car implements Runnable {
+  int a;
+  public void fun() {
+    System~~ "func call");
+  }
+}
+public class Main{
+  public static void main~~{
+    Thread t1 = new Thread(new _______());
+    t1.start();
+  }
+}
+밑줄은 : Car
+
+
+17. java 프로그램 결과
+class a{
+  int a;
+  int b;
+}
+public class Main{
+  static void func1(A a){
+    a.a *= 10;
+  }
+  static void func1(A a){
+    a.a += a.b;
+  }
+}
+A a = new A();
+a.a = 100;
+func1(a);
+a.b = a.a;
+func2(a);
+System.out.println(a.a);
+
+출력 : 2000
+
+
+18. c언어 출력결과
+입력값은 5 가정
+int func(int i){
+  if(i<=1) return 1;
+  return i * func(i-2);
+}
+int main(){
+  int in;
+  scanf(~~in)
+  printf("%d", func(in));
+}
+
+출력 : 15
+
+
+19. c언어 괄호안
+int main(){
+  int num = 1234;
+  int div = 10;
+  int res = 0;
+  while (num (1) 0 ){
+    res = res * div;
+    res res + num (2) div;
+    num = num (3) div;
+  }
+printf("%d", res);
+}
+
+(1) >
+(2) %
+(3) /
+
+
+20. c언어 결과
+int isPrime(int number){
+  int i;
+  for(i=2;i<number;i++){
+    if(number%i == 0) return 0;
+  }
+  return 1;
+}
+int main(){
+  int number = 13195, max_div=0, i;
+  for(i=2; i<number; i++)
+    if(isPrime(i) == 1 && number%i == 0)
+      max_div = i;
+  printf("%d", max_div);
+  return 0;
+}
+
+결과 : 29
